@@ -1,0 +1,116 @@
+{
+    "queryCost": 1,
+    "latitude": 51.5064,
+    "longitude": -0.12721,
+    "resolvedAddress": "London, England, United Kingdom",
+    "address": "London,UK",
+    "timezone": "Europe/London",
+    "tzoffset": 1.0,
+    "days": [
+        {
+            "datetime": "2024-04-19",
+            "tempmax": 13.7,
+            "tempmin": 7.3,
+            "temp": 10.6,
+            "feelslike": 9.6,
+            "sunrise": "05:55:28",
+            "sunset": "20:04:47",
+            "conditions": "Rain, Partially cloudy",
+            "description": "Partly cloudy throughout the day with a chance of rain throughout the day.",
+            "icon": "rain"
+        },
+        {
+            "datetime": "2024-04-20",
+            "tempmax": 10.8,
+            "tempmin": 3.4,
+            "temp": 7.3,
+            "feelslike": 5.7,
+            "sunrise": "05:53:23",
+            "sunset": "20:06:27",
+            "conditions": "Partially cloudy",
+            "description": "Partly cloudy throughout the day.",
+            "icon": "partly-cloudy-day"
+        },
+        {
+            "datetime": "2024-04-21",
+            "tempmax": 12.1,
+            "tempmin": 4.0,
+            "temp": 7.7,
+            "feelslike": 6.9,
+            "sunrise": "05:51:19",
+            "sunset": "20:08:07",
+            "conditions": "Partially cloudy",
+            "description": "Partly cloudy throughout the day.",
+            "icon": "partly-cloudy-day"
+        },
+        {
+            "datetime": "2024-04-22",
+            "tempmax": 10.4,
+            "tempmin": 2.8,
+            "temp": 6.7,
+            "feelslike": 5.6,
+            "sunrise": "05:49:16",
+            "sunset": "20:09:47",
+            "conditions": "Rain, Partially cloudy",
+            "description": "Partly cloudy throughout the day with a chance of rain.",
+            "icon": "rain"
+        },
+        {
+            "datetime": "2024-04-23",
+            "tempmax": 10.2,
+            "tempmin": 3.3,
+            "temp": 7.1,
+            "feelslike": 5.4,
+            "sunrise": "05:47:14",
+            "sunset": "20:11:27",
+            "conditions": "Partially cloudy",
+            "description": "Partly cloudy throughout the day.",
+            "icon": "partly-cloudy-day"
+        },
+        {
+            "datetime": "2024-04-24",
+            "tempmax": 12.0,
+            "tempmin": 4.6,
+            "temp": 8.1,
+            "feelslike": 7.3,
+            "sunrise": "05:45:13",
+            "sunset": "20:13:06",
+            "conditions": "Overcast",
+            "description": "Cloudy skies throughout the day.",
+            "icon": "cloudy"
+        },
+        {
+            "datetime": "2024-04-25",
+            "tempmax": 10.7,
+            "tempmin": 5.6,
+            "temp": 7.9,
+            "feelslike": 6.7,
+            "sunrise": "05:43:13",
+            "sunset": "20:14:46",
+            "conditions": "Overcast",
+            "description": "Cloudy skies throughout the day.",
+            "icon": "cloudy"
+        },
+        {
+            "datetime": "2024-04-26",
+            "tempmax": 12.6,
+            "tempmin": 6.8,
+            "temp": 9.2,
+            "feelslike": 9.0,
+            "sunrise": "05:41:14",
+            "sunset": "20:16:25",
+            "conditions": "Rain, Overcast",
+            "description": "Cloudy skies throughout the day with a chance of rain.",
+            "icon": "rain"
+        }
+    ],
+    "currentConditions": {
+        "datetime": "11:20:00",
+        "temp": 12.2,
+        "feelslike": 12.2,
+        "conditions": "Overcast",
+        "icon": "cloudy",
+        "sunrise": "05:55:28",
+        "sunset": "20:04:47"
+    }
+}

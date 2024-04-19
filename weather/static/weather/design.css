@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid #0277bd;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 300px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #0277bd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #01579b;
+}
+
+.current-conditions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-block {
+    width: 60%;  /* Adjust based on preference */
+}
+
+.icon-block {
+    width: 40%;  /* Adjust based on preference */
+    text-align: center;
+}
+
+.weather-icon-large {
+    width: 10rem;  /* Adjust size as needed */
+    height: 10rem;  /* Maintain aspect ratio */
+}
+
+.temp {
+    font-size: 2em;
+    color: #ef5350;
+}
+
+.feels-like {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.conditions, .sun-times {
+    color: #666;
+}
+
+.days {
+    display: flex;
+    justify-content: space-around;
+}
+
+.day {
+    text-align: center;
+}
+
+.day-name {
+    font-weight: bold;
+    color: #0277bd;
+}
+
+.forecast-temp {
+    color: #ef5350;
+}
+
+@media (max-width: 600px) {
+    .day {
+        flex-grow: 1;
+        margin: 0 5px;
+    }
+}
+
+.sevenday{
+    text-align: center;
+}
