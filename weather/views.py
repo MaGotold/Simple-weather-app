@@ -16,7 +16,7 @@ def call_api(request):
     api_key = os.environ.get('API_KEY')
     if location:
         response = requests.get(f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{location}/next7days?unitGroup=metric&key={api_key}&include=days,current&elements=datetime,tempmax,tempmin,temp,feelslike,sunrise,sunset,conditions,description,icon")
-    else : response = requests.get(f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Považská Bystrica/next7days?unitGroup=metric&key={os.environ.get(api_key)}&include=days,current&elements=datetime,tempmax,tempmin,temp,feelslike,sunrise,sunset,conditions,description,icon")
+    else : response = requests.get(f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Považská Bystrica/next7days?unitGroup=metric&key={api_key}&include=days,current&elements=datetime,tempmax,tempmin,temp,feelslike,sunrise,sunset,conditions,description,icon")
 
     data = response.json() 
     context = []
@@ -65,4 +65,5 @@ class DaysView(TemplateView):
         return context,data
 
 
+    
     
