@@ -89,6 +89,12 @@ body {
     text-align: center;
 }
 
+.day:hover {
+    background-color: #76b0d7; 
+    cursor: pointer; 
+}
+
+
 .day-name {
     font-weight: bold;
     color: #0277bd;
@@ -108,3 +114,7 @@ body {
 .sevenday{
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+  }

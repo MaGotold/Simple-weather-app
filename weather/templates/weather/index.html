@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Weather Forcast{% endblock title %}
+
+{% block content %}
+<div class="weather-container">
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <form action=""  method="GET">
+            <input type="text" name="location" placeholder="Enter location" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <!--current conditions-->
+    <div class="current-conditions">
+      <div class="info-block">
+          <h2>Current Weather in {{data.address}}</h2>
+          <p class="temp">{{data.currentConditions.temp}}°C</p>
+          <p class="feels-like">Feels like: {{data.currentConditions.feelslike}}°C</p>
+          <p class="conditions">{{data.currentConditions.conditions}}</p>
+          <p class="sun-times">Sunrise: {{data.currentConditions.sunrise}} | Sunset: {{data.currentConditions.sunset}}</p>
+      </div>
+      <div class="icon-block">
+          <img src="{% static '/weather/images/'|add:data.currentConditions.icon|add:'.png' %}" alt="Current Weather Icon" class="weather-icon-large">
+      </div>
+  </div>
+
+    <!-- Forecast -->
+    <div class="forecast">
+        <h2 class="sevenday">7-Day Forecast</h2>
+        <div class="days">
+            <!-- Repeat this block for each day in the forecast -->
+            
+            {% for day in context %}
+            <a href= "{% url "days" %}">
+            <div class="day">
+                <p class="day-name">{{day.datetime|date:"D"}}</p>
+                <img src="{% static '/weather/images/'|add:day.icon|add:'.png' %}" alt="Forecast Icon" class="forecast-icon">
+                <p class="forecast-temp">{{day.tempmax}}°C/{{day.tempmin}}°C</p>
+            </div>
+            
+            {% endfor %}
+            <!-- Additional days here -->
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
